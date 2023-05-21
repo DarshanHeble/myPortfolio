@@ -12,13 +12,13 @@
   height: 7px;
 }
 
-::-webkit-scrollbar-track {
-  /* background: #c9c9c9; */
-}
+/* ::-webkit-scrollbar-track {
+  background: #c9c9c9;
+} */
 
-::-webkit-scrollbar-track:hover {
-  /* width: 20px; */
-}
+/* ::-webkit-scrollbar-track:hover {
+  width: 20px;
+} */
 
 ::-webkit-scrollbar-thumb {
   background: rgb(161, 161, 161);
@@ -59,8 +59,8 @@
 /* --------------------------------------Scrollbar End------------------------------ */
 
 :root {
-  --bg-header: rgba(255, 255, 255, 0.95);
-  --body-bg-color: #f6f6f6;
+  --bg-header: rgb(221 221 221 / 95%);
+  --body-bg-color: #cfcfcf;
   --logo-color: rgba(53, 53, 53, 0.966);
   --icon-color: rgba(53, 53, 53, 0.966);
   --heading-color: rgb(7, 7, 7);
@@ -69,6 +69,7 @@
   --theme-shadow-color: rgb(255, 136, 0);
   --light-theme-color: rgb(250, 198, 139);
   --border-color: #4e4e4e;
+  --moon-color: brightness(0.7);
 }
 
 /* --------------------------------------Dark Theme Start------------------------------ */
@@ -77,10 +78,12 @@
   --body-bg-color: #171717;
   --heading-color: rgb(255 255 255);
   --paragraph-color: rgb(200 200 200);
-  --icon-color: rgb(243 243 243);
+  --icon-color: rgb(232 232 232);
   --logo-color: rgb(235 235 235);
   --theme-shadow-color: rgb(255, 166, 0);
   --border-color: #575757;
+  --moon-color: brightness(1);
+
   /* transition: all .5s; */
 }
 
@@ -193,10 +196,6 @@ header {
   transition: all ease-in-out 0.5s;
 }
 
-.wraper2 .button .icon span {
-  font-size: 30px;
-}
-
 .wraper2 .button .tooltip {
   position: absolute;
   font-size: large;
@@ -246,7 +245,6 @@ header {
 
 
 .moon {
-
   background-color: var(--background-button-color);
   margin-right: 10px;
   width: 2rem;
@@ -256,9 +254,11 @@ header {
   place-content: center;
   line-height: 0px;
   cursor: pointer;
+  transition: all 1s;
 }
 
 .moon #moon {
+  filter: var(--moon-color);
   width: 25px;
 }
 
@@ -286,15 +286,36 @@ header {
   color: black;
 }
 
-.aside .smicons a .fa-linkedin {
-  color: rgb(9, 102, 243);
-}
-
 .aside .smicons a .fa-instagram {
-  color: rgb(228, 64, 95);
+  color: var(--icon-color);
+
 }
 
 .fa-github {
+  color: var(--icon-color);
+}
+
+.fa-discord {
+  color: var(--icon-color);
+}
+
+/* .fa-discord:hover .showID {
+  transform: translateX(0px);
+}
+
+.showID {
+  transform: translateX(-50px);
+  position: absolute;
+  left: 7rem;
+  top: 14rem;
+  background-color: var(--theme-color);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 14px;
+} */
+
+
+.fa-linkedin-in {
   color: var(--icon-color);
 }
 
@@ -1003,7 +1024,7 @@ footer {
     padding-left: 0
   }
 
-  .about .about-info .about-image {}
+  /* .about .about-info .about-image {} */
 
   .about .about-info .about-para {
     width: 94vw;
@@ -1076,7 +1097,7 @@ footer {
     flex-direction: column;
   }
 
-  element.style {}
+  /* element.style {} */
 
   .Contact .contact-info .send-message .name-email #name {
     width: 90vw;

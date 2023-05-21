@@ -66,3 +66,9 @@ wraper1.addEventListener("click", function () {
 });
 
 // ---------------------------menue bar end----------------------------
+// var discord = document.getElementsByClassName("discord");
+// var showID = document.getElementsByClassName("showID");
+
+// discord.addEventListener("click", function () {
+//   showID.style.display = "inline";
+// });
