@@ -76,9 +76,9 @@
 .darkmode {
   --bg-header: rgba(0, 0, 0, 0.95);
   --body-bg-color: #171717;
-  --heading-color: rgb(255 255 255);
+  --heading-color: rgb(205 205 205);
   --paragraph-color: rgb(200 200 200);
-  --icon-color: rgb(232 232 232);
+  --icon-color: rgb(209 209 209);
   --logo-color: rgb(235 235 235);
   --theme-shadow-color: rgb(255, 166, 0);
   --border-color: #575757;
@@ -466,7 +466,7 @@ header {
 .about .about-info .about-para {
   color: var(--paragraph-color);
   width: 35rem;
-  height: 15rem;
+  height: 19rem;
   margin-left: 56px;
 }
 
@@ -479,7 +479,7 @@ header {
 }
 
 .about .about-info .about-para .about-para-extra li {
-  color: rgb(138, 138, 138);
+  color: rgb(117 117 117);
 }
 
 .about .about-info .about-para .about-btn {
@@ -739,6 +739,11 @@ header {
 textarea:focus {
   box-shadow: 10px 10px 20px #cdcdcd;
   border: 1px solid var(--border-color);
+}
+
+.formbtn {
+  border: none;
+  padding-bottom: 14px;
 }
 
 /* --------------------------------------Contact End------------------------------ */
