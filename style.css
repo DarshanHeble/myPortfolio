@@ -299,20 +299,26 @@ header {
   color: var(--icon-color);
 }
 
-/* .fa-discord:hover .showID {
-  transform: translateX(0px);
+.discord:hover {
+  width: fit-content;
+}
+
+.discord:hover .showID {
+  display: inline;
 }
 
 .showID {
-  transform: translateX(-50px);
+  display: none;
+  font-size: 18px;
   position: absolute;
-  left: 7rem;
-  top: 14rem;
+  left: 3.1rem;
+  top: 7.3rem;
   background-color: var(--theme-color);
   width: fit-content;
   padding: 5px;
   border-radius: 14px;
-} */
+  transition: all 3s;
+}
 
 
 .fa-linkedin-in {
@@ -697,6 +703,7 @@ header {
 }
 
 .Contact .contact-info .send-message {
+  height: 22.1rem;
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -867,6 +874,7 @@ footer {
 
 
   .fa-bars {
+    color: var(--icon-color);
     position: relative;
     right: 2rem;
     display: inline;
@@ -874,6 +882,7 @@ footer {
   }
 
   .fa-times {
+    color: var(--icon-color);
     display: inline;
     font-size: 2.9rem;
     position: relative;
@@ -919,6 +928,10 @@ footer {
   .wraper2 .button {
     width: 8rem;
     height: 4rem;
+  }
+
+  .wraper2 .button:hover {
+    width: 15rem;
   }
 
   .wraper2 .button:hover {
@@ -1128,5 +1141,172 @@ footer {
     font-size: 1.5rem;
     width: 2.5rem;
     height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    padding: 0;
+  }
+
+  .wraper2 .button a {
+    color: rgba(53, 53, 53, 0.966);
+    ;
+  }
+
+  .wraper2 .button a .icon {
+    font-size: 2.4rem;
+
+  }
+
+  /* .wraper2 .button a .icon1 {
+    right: 3rem;
+  }
+
+  .wraper2 .button a .icon2 {
+    right: 0rem;
+  }
+
+  .wraper2 .button a .icon3 {
+    right: 0rem;
+  }
+
+  .wraper2 .button a .icon4 {
+    right: 0rem;
+  }
+
+  .wraper2 .button a .icon5 {
+    right: 0rem;
+  } */
+
+  .fa-times {
+    right: -11rem;
+  }
+
+  .wraper2 .button:hover {
+    width: 21rem;
+  }
+
+  .section {
+    height: 50rem;
+    justify-content: space-evenly;
+  }
+
+  .home {
+    justify-content: start;
+    height: 44rem;
+  }
+
+  .home .home-img {
+    width: 14rem;
+    height: 14rem;
+    margin: 42px 0;
+  }
+
+  .home .home-img img {
+    padding-top: 5rem;
+    width: 15rem;
+  }
+
+  .home .home-info {
+    padding-left: 3px;
+  }
+
+  .home .home-info .head {
+    width: 21rem;
+    height: 7.5rem;
+    line-height: 36px;
+    font-size: 2.2rem;
+  }
+
+  .about .about-info .about-image {
+    max-width: 18rem;
+    height: 13rem;
+  }
+
+  .about .about-info .about-para {
+    margin-left: 0px;
+    height: auto;
+  }
+
+  .skills {
+    height: 40rem;
+  }
+
+  .skills .skills-info {
+    height: auto;
+  }
+
+  .skills .skills-info .skills-box {
+    width: 19rem;
+  }
+
+  .skills .skills-info .skills-box .skills-box-head {
+    width: 18rem;
+  }
+
+  .skills .skills-info .skills-box .myskills .skills {
+    width: 18rem;
+    margin: 11px 0 0 0;
+  }
+
+  .skills .skills-info .skills-box .myskills .skills .aboveskillbar {
+    width: 18rem;
+  }
+
+  .education {
+    height: 40rem;
+  }
+
+  .education .ball {
+    left: -3px;
+  }
+
+  .education .educationinfo .edubar .edu {
+    width: 17rem;
+  }
+
+  .Contact .contact-info .send-message .name-email input {
+    height: 7vh;
+  }
+
+  .Contact .contact-info .send-message input #subject {
+    height: 7vh;
+  }
+
+  .Contact .contact-info .send-message {
+    width: 100vw;
+    align-items: flex-start;
+    padding-left: 17px;
+  }
+
+  .aside .fa {
+    /* color: black; */
+  }
+
+  .moon #moon {
+    width: 32px;
+    filter: var(--moon-color)
+  }
+
+  .discord:hover {
+    width: fit-content;
+  }
+
+  .discord:hover .showID {
+    display: inline;
+  }
+
+  .showID {
+    display: none;
+    font-size: 18px;
+    position: absolute;
+    left: 3.1rem;
+    top: 7.3rem;
+    background-color: var(--theme-color);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 14px;
+    transition: all 3s;
   }
 }

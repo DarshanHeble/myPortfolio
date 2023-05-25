@@ -1,6 +1,19 @@
 // ---------------------------dark mode start----------------------------
 var icon = document.getElementById("moon");
 
+if (localStorage.getItem("theme") == null) {
+  localStorage.setItem("theme", "light");
+}
+let localData = localStorage.getItem("theme");
+
+if (localData == "light") {
+  icon.src = "moon.png";
+  document.body.classList.remove("darkmode");
+} else if (localData == "dark") {
+  icon.src = "sun.png";
+  document.body.classList.remove("darkmode");
+}
+
 icon.onclick = function () {
   document.body.classList.toggle("darkmode");
   if (document.body.classList.contains("darkmode")) {
@@ -66,6 +79,7 @@ wraper1.addEventListener("click", function () {
 });
 
 // ---------------------------menue bar end----------------------------
+
 // var discord = document.getElementsByClassName("discord");
 // var showID = document.getElementsByClassName("showID");
 
