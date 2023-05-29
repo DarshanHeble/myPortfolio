@@ -1151,7 +1151,6 @@ footer {
 
   .wraper2 .button a {
     color: rgba(53, 53, 53, 0.966);
-    ;
   }
 
   .wraper2 .button a .icon {
@@ -1217,6 +1216,10 @@ footer {
     height: 7.5rem;
     line-height: 36px;
     font-size: 2.2rem;
+  }
+
+  .about .about-info {
+    flex-direction: column;
   }
 
   .about .about-info .about-image {
