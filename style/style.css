@@ -980,4 +980,133 @@ footer {
     }
 
     /* ----------------home end-------------- */
+
+    .section {
+        width: 100vw;
+        height: 120svh;
+        /* border: 1px solid red; */
+        padding-top: 0;
+    }
+
+    /* ----------------about start-------------- */
+
+    .about .about-info {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding-left: 0
+    }
+
+    /* .about .about-info .about-image {} */
+
+    .about .about-info .about-para {
+        width: 94vw;
+        margin-left: 0;
+    }
+
+    .about .about-info .about-para .about-para-extra {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        font-size: 15px;
+        margin-top: 19px;
+        line-height: 21px;
+    }
+
+    .about .about-info .about-image {
+        margin-bottom: 10px;
+        height: 13rem;
+    }
+
+    .about .about-info .about-image img {
+        height: 16rem;
+    }
+
+    /* ----------------about end-------------- */
+    /* ----------------skill start-------------- */
+    .skills .skills-info {
+        width: 100vw;
+        height: inherit;
+        flex-direction: column;
+    }
+
+    /* ----------------skill end-------------- */
+    /* ----------------education start-------------- */
+
+    .education {
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .education .educationinfo {
+        width: 100vw;
+        height: 1oovh;
+    }
+
+    .education .educationinfo .edubar {
+        width: 100vw;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .education .educationinfo .edubar1,
+    .edubar3 {
+        /* width: auto; */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .education .ball {
+        left: -1rem;
+    }
+
+    /* ----------------education end-------------- */
+    /* ----------------contact start-------------- */
+    .Contact {
+        justify-content: space-evenly;
+    }
+
+    .Contact .contact-info {
+        width: 100vw;
+        flex-direction: column;
+    }
+
+    .Contact .contact-info .send-message {
+        width: 100vw;
+        align-items: center;
+    }
+
+    .Contact .contact-info .send-message .name-email {
+        flex-direction: column;
+    }
+
+    /* element.style {} */
+
+    .Contact .contact-info .send-message .name-email #name {
+        width: 90vw;
+        width: 90vw;
+    }
+
+    .Contact .contact-info .send-message .name-email #email {
+        width: 90vw;
+    }
+
+    .Contact .contact-info .send-message input {
+        width: 90vw;
+        height: 8vh;
+    }
+
+    .Contact .contact-info .send-message textarea {
+        width: 90vw;
+        height: 25vh;
+    }
+
+    /* ----------------contact end-------------- */
+    .to-top {
+        font-size: 1.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
