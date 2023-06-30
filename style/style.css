@@ -961,6 +961,10 @@ footer {
         padding-left: 1rem;
     }
 
+    .home .home-info .head {
+        height: auto;
+    }
+
     .home .home-info p {
         line-height: 17px;
         color: var(--paragraph-color);
@@ -971,12 +975,16 @@ footer {
     .home .home-img {
         width: 16rem;
         height: 16rem;
-        margin-top: 1px;
+        margin: 0 0 0 4rem;
     }
 
     .home .home-img img {
         padding-top: 4rem;
         width: 28rem;
+    }
+
+    .home .myname {
+        width: 17rem;
     }
 
     /* ----------------home end-------------- */
@@ -989,6 +997,9 @@ footer {
     }
 
     /* ----------------about start-------------- */
+    .about {
+        margin: 105px;
+    }
 
     .about .about-info {
         flex-direction: column;
@@ -1017,7 +1028,7 @@ footer {
 
     .about .about-info .about-image {
         margin-bottom: 10px;
-        height: 13rem;
+        height: 15rem;
     }
 
     .about .about-info .about-image img {
