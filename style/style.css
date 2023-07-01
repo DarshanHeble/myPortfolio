@@ -1106,7 +1106,7 @@ footer {
 
     .Contact .contact-info .send-message input {
         width: 90vw;
-        height: 8vh;
+        /* height: 8vh; */
     }
 
     .Contact .contact-info .send-message textarea {
@@ -1119,5 +1119,59 @@ footer {
         font-size: 1.5rem;
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+@media (max-width:320px) {
+
+    .home .home-img img {
+        width: 26rem;
+    }
+
+    .home .home-info .head .wrapper {
+        flex-direction: column;
+    }
+
+    .home .home-info .head .wrapper .dynamic-txt {
+        margin-left: 0;
+    }
+
+    @keyframes typing {
+
+        40%,
+        60% {
+            left: calc(55% + 30px);
+            /* left: calc(100% + 30px); */
+        }
+
+        100% {
+            left: 0;
+        }
+    }
+
+    .skills .skills-info .skills-box {
+        width: auto;
+    }
+
+    .skills .skills-info .skills-box .myskills .skills {
+        width: 17rem;
+        height: 49px;
+        margin: 8px 0 0 0px;
+    }
+
+    .skills .skills-info .skills-box .skills-box-head {
+        width: 18rem;
+    }
+
+    .skills .skills-info .skills-box .myskills .skills {
+        width: auto;
+    }
+
+    .skills .skills-info .skills-box .myskills .skills .aboveskillbar {
+        width: 16rem;
+    }
+
+    .education .ball {
+        left: -0.4rem;
     }
 }
