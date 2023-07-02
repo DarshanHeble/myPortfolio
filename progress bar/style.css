@@ -14,25 +14,26 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    background: rgb(255, 115, 0);
+    /* background: rgb(255, 115, 0); */
 }
 
-.circularprobar {
+.container .circularprobar {
     width: 200px;
     height: 200px;
     border-radius: 50%;
     position: relative;
-    background: conic-gradient(rgb(11, 9, 9) 3.6deg, rgb(25, 25, 84) 0deg);
+    background: conic-gradient(rgb(255, 153, 0) 3.6deg, rgb(241 241 241) 0deg);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.circularprobar::before {
+.container .circularprobar::before {
     content: "";
-    background: yellow;
+    background: rgb(255, 255, 255);
     width: 160px;
     height: 160px;
     position: absolute;
@@ -40,7 +41,12 @@ body {
 
 }
 
-.progressvalue {
+.container .circularprobar i {
+    font-size: 5rem;
+    position: relative;
+}
+
+.container .circularprobar .progressvalue {
     position: relative;
     font-size: 49px;
     font-weight: bolder;

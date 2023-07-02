@@ -1,16 +1,61 @@
-let circularProgress = document.querySelector(".circularprobar"),
-    progressValue = document.querySelector(".progressvalue");
+
+let circularProgresshtml = document.querySelector(".html"), //html 
+    progressValuehtml = document.querySelector(".progressvaluehtml");
+
+
 
 let progressStartValue = 0,
-    progressEndValue = 90,
     speed = 100;
 
-let progress = setInterval(() => {
-    progressStartValue++;
-    progressValue.textContent = `${progressStartValue}%`
-    circularProgress.style.background = `conic-gradient(red ${progressStartValue * 3.6}deg, yellow 0deg)`;
+let progressEndValuehtml = 90;
 
-    if (progressStartValue == progressEndValue) {
-        clearInterval(progress);
+let progresshtml = setInterval(() => {
+    progressStartValue++;
+
+    progressValuehtml.textContent = `${progressStartValue}%`
+    circularProgresshtml.style.background = `conic-gradient(rgb(255, 153, 0) ${progressStartValue * 3.6}deg, rgb(241 241 241) 0deg)`;
+
+    if (progressStartValue == progressEndValuehtml) {
+        clearInterval(progresshtml);
     }
 }, speed);
+
+
+let circularProgresscss = document.querySelector(".css"), //css
+    progressValuecss = document.querySelector(".progressvaluecss");
+
+let progressEndValuecss = 80;
+
+let progresscss = setInterval(() => {
+    progressStartValue++;
+
+    progressValuecss.textContent = `${progressStartValue}%`
+    circularProgresscss.style.background = `conic-gradient(rgb(255, 153, 0) ${progressStartValue * 3.6}deg, rgb(241 241 241) 0deg)`;
+
+    if (progressStartValue == progressEndValuecss) {
+        clearInterval(progresscss);
+    }
+}, speed);
+
+
+let circularProgressjs = document.querySelector(".js"), //js
+    progressValuejs = document.querySelector(".progressvaluejs");
+
+let progressStartValuejs = 0;
+//speed = 100;
+let progressEndValuejs = 0;
+
+let progressjs = setInterval(() => {
+    progressStartValuejs++;
+
+    progressValuejs.textContent = `${progressStartValue}%`
+    circularProgressjs.style.background = `conic-gradient(rgb(255, 153, 0) ${progressStartValue * 3.6}deg, rgb(241 241 241) 0deg)`;
+
+    if (progressStartValuejs == progressEndValuejs) {
+        clearInterval(progressjs);
+    }
+}, speed);
+
+
+
+
