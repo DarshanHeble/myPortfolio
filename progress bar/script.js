@@ -2,8 +2,6 @@
 let circularProgresshtml = document.querySelector(".html"), //html 
     progressValuehtml = document.querySelector(".progressvaluehtml");
 
-
-
 let progressStartValue = 0,
     speed = 100;
 
@@ -42,7 +40,6 @@ let circularProgressjs = document.querySelector(".js"), //js
     progressValuejs = document.querySelector(".progressvaluejs");
 
 let progressStartValuejs = 0;
-//speed = 100;
 let progressEndValuejs = 0;
 
 let progressjs = setInterval(() => {

@@ -41,7 +41,7 @@ body {
 
 }
 
-.container .circularprobar i {
+.container .circularprobar svg {
     font-size: 5rem;
     position: relative;
 }
