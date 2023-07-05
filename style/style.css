@@ -605,6 +605,12 @@ header {
 }
 
 /* --------------------------------------Skills End------------------------------ */
+/* --------------------------------------Projectss Start------------------------------ */
+.project-info .project a img {
+    width: 1rem;
+}
+
+/* --------------------------------------Project End------------------------------ */
 /* --------------------------------------Education Start------------------------------ */
 .education {
     justify-content: space-evenly;
@@ -1173,5 +1179,20 @@ footer {
 
     .education .ball {
         left: -0.4rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .aside {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+
+    .aside .smicons-wrapper {
+        display: flex;
+        justify-content: space-evenly;
     }
 }
