@@ -604,6 +604,21 @@ header {
     width: 8rem;
 }
 
+.skillsInfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill small {
+    font-size: 24px;
+}
+
 /* --------------------------------------Skills End------------------------------ */
 /* --------------------------------------Projectss Start------------------------------ */
 .project-info .project a img {
