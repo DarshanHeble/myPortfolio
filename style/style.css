@@ -605,8 +605,9 @@ header {
 }
 
 .skillsInfo {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto auto;
     gap: 2em;
 }
 
@@ -614,6 +615,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .skill small {
