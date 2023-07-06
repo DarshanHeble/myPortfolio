@@ -607,6 +607,7 @@ header {
 .skillsInfo {
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
 }
 
 .skill {
@@ -616,6 +617,7 @@ header {
 }
 
 .skill small {
+    color: var(--paragraph-color);
     font-size: 24px;
 }
 
