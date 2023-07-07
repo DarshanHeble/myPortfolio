@@ -11,18 +11,21 @@ if (localData == "light") {
   document.body.classList.remove("darkmode");
 } else if (localData == "dark") {
   icon.src = "sun.png";
-  document.body.classList.remove("darkmode");
+  document.body.classList.add("darkmode");
 }
 
 icon.onclick = function () {
   document.body.classList.toggle("darkmode");
   if (document.body.classList.contains("darkmode")) {
     icon.src = "sun.png";
+    localStorage.setItem("theme", "dark");
   } else {
     icon.src = "moon.png";
+    localStorage.setItem("theme", "light");
   }
 };
 // ---------------------------dark mode end----------------------------
+
 // ---------------------------typing start----------------------------
 // var typed = new typed(".typing", {
 //     strings: [" ", "Web Developer", "Programer"],
@@ -31,6 +34,7 @@ icon.onclick = function () {
 //     Loop: true
 // })
 // ---------------------------typing end----------------------------
+
 // ---------------------------Scroll Animation Start----------------------------
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -49,6 +53,7 @@ hiddenElementsX.forEach((el) => observer.observe(el));
 hiddenElementsY.forEach((el) => observer.observe(el));
 
 // ---------------------------Scroll Animation end----------------------------
+
 // ---------------------------Scroll up start----------------------------
 const toTop = document.querySelector(".to-top");
 
@@ -60,6 +65,7 @@ window.addEventListener("scroll", () => {
   }
 });
 // ---------------------------Scroll up end----------------------------
+
 // ---------------------------menue bar start----------------------------
 let bars = document.querySelector(".fa-bars");
 let wraper = document.querySelector(".wraper");
@@ -80,9 +86,4 @@ wraper1.addEventListener("click", function () {
 
 // ---------------------------menue bar end----------------------------
 
-// var discord = document.getElementsByClassName("discord");
-// var showID = document.getElementsByClassName("showID");
 
-// discord.addEventListener("click", function () {
-//   showID.style.display = "inline";
-// });
