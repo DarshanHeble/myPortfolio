@@ -77,11 +77,11 @@ bars.addEventListener("click", function () {
 });
 
 times.addEventListener("click", function () {
-  wraper.style.left = "35rem";
+  wraper.style.left = "40rem";
 });
 
 wraper1.addEventListener("click", function () {
-  wraper.style.left = "35rem";
+  wraper.style.left = "40rem";
 });
 
 // ---------------------------menue bar end----------------------------

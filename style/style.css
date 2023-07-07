@@ -510,99 +510,6 @@ header {
 
 /* --------------------------------------About End------------------------------ */
 /* --------------------------------------Skills Start ------------------------------ */
-.skills .skills-info {
-    /* border: 1px solid rgb(255, 0, 0); */
-    width: 65vw;
-    /* height: 75vh; */
-    height: 59vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.skills .skills-info .skills-box {
-    /* background-color:var(); */
-    border: 1px solid rgb(128, 127, 127);
-    border-radius: 19px;
-    width: 22rem;
-    height: 16rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 5px 5px 10px #cdcdcd;
-}
-
-.skills .skills-info .skills-box .skills-box-head {
-    background: linear-gradient(to right, rgb(255, 136, 0), rgb(255, 194, 62));
-    border: 1px solid rgb(70, 70, 70);
-    border-radius: 19px;
-    height: 2.5rem;
-    width: 21rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-}
-
-.skills .skills-info .skills-box .myskills {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 12.5rem;
-}
-
-.skills .skills-info .skills-box .myskills .skills {
-    width: max-content;
-    height: 49px;
-    margin: 8px 0 0 14px;
-}
-
-.skills .skills-info .skills-box .myskills .skills .aboveskillbar {
-    display: flex;
-    justify-content: space-between;
-    width: 20rem;
-}
-
-.skills .skills-info .skills-box .myskills .skills h6 {
-    font-size: 17px;
-    color: var(--heading-color);
-}
-
-.skills .skills-info .skills-box .myskills .skills .percentage {
-    color: var(--paragraph-color);
-}
-
-.skills .skills-info .skills-box .myskills .skills .skillbar {
-    background-color: var(--light-theme-color);
-    height: 4px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-
-.skills .skills-info .skills-box .myskills .skills .skillbar .bar {
-    background-color: var(--theme-color);
-    height: 4px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-
-.skills .skills-info .skills-box .myskills .skills .skillbar .bar1 {
-    width: 16rem;
-}
-
-.skills .skills-info .skills-box .myskills .skills .skillbar .bar2 {
-    width: 14rem;
-}
-
-.skills .skills-info .skills-box .myskills .skills .skillbar .bar3 {
-    width: 8rem;
-}
-
-.skills .skills-info .skills-box .myskills .skills .skillbar .bar4 {
-    width: 8rem;
-}
 
 .skillsInfo {
     display: grid;
@@ -621,7 +528,7 @@ header {
 
 .skill small {
     color: var(--paragraph-color);
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* --------------------------------------Skills End------------------------------ */
@@ -837,6 +744,22 @@ footer {
         width: 375px;
     }
 } */
+@media (max-width:768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .aside {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+
+    .aside .smicons-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
 
 @media (max-width:640px) {
     header {
@@ -854,12 +777,6 @@ footer {
 
     .fa-bars {
         color: var(--icon-color);
-        display: inline;
-        font-size: 2rem;
-    }
-
-    .fa-bars {
-        color: var(--icon-color);
         position: relative;
         /* right: 2rem; */
         display: inline;
@@ -867,18 +784,18 @@ footer {
     }
 
     .fa-times {
-        color: var(--icon-color);
+        color: rgba(53, 53, 53, 0.966);
         display: inline;
         font-size: 2.9rem;
         position: relative;
         bottom: 3rem;
-        right: -15rem;
+        left: calc(100vw - 70%);
     }
 
     .wraper {
         display: flex;
         flex-direction: row;
-        left: 35rem;
+        left: 40rem;
         height: 100vh;
         width: 100vw;
         top: 0;
@@ -903,6 +820,7 @@ footer {
     }
 
     .wraper2 .button a .icon {
+        color: rgba(53, 53, 53, 0.966);
         font-size: 2.7rem;
     }
 
@@ -1063,16 +981,11 @@ footer {
 
     /* ----------------about end-------------- */
     /* ----------------skill start-------------- */
-    .skills .skills-info {
-        width: 100vw;
-        height: inherit;
-        flex-direction: column;
-    }
 
     .skillsInfo {
         display: grid;
         grid-template-columns: auto auto auto;
-        gap: 1em;
+        gap: 2vw;
         margin-top: 3rem;
     }
 
@@ -1152,6 +1065,12 @@ footer {
         font-size: 1.5rem;
         width: 2.5rem;
         height: 2.5rem;
+    }
+}
+
+@media (max-width:375px) {
+    .fa-times {
+        right: -12rem;
     }
 }
 
