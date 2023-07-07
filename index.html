@@ -564,12 +564,14 @@
                 </div>
                 <form class="send-message hiddenY" action="">
                     <div class="name-email">
-                        <input type="text" id="name" placeholder="Name">
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <input type="email" id="email" name="email" placeholder="Email">
                     </div>
-                    <input type="text" id="subject" placeholder="Subject">
-                    <textarea name="Discription" id="" cols="30" rows="10" placeholder="Discription"></textarea>
-                    <button type="submit" class="btn formbtn">Send Message</button>
+                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea name="Discription" id="" name="discription" cols="30" rows="10"
+                        placeholder="Discription"></textarea>
+                    <button id="sub" type="submit" class="btn formbtn">Send Message</button>
+                    <h3 id="msg"></h3>
                 </form>
             </div>
 
