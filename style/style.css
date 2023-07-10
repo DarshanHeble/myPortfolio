@@ -531,6 +531,11 @@ header {
     font-size: 22px;
 }
 
+#svggithub {
+    fill: var(--icon-color);
+    font-size: 7rem;
+}
+
 /* --------------------------------------Skills End------------------------------ */
 /* --------------------------------------Projectss Start------------------------------ */
 .project-info .project a img {
@@ -801,6 +806,7 @@ footer {
         top: 0;
         position: fixed;
         z-index: 1;
+        transition: all 0.3s;
     }
 
     .wraper1 {

@@ -7,20 +7,20 @@ if (localStorage.getItem("theme") == null) {
 let localData = localStorage.getItem("theme");
 
 if (localData == "light") {
-  icon.src = "moon.png";
+  icon.src = "images/moon.png";
   document.body.classList.remove("darkmode");
 } else if (localData == "dark") {
-  icon.src = "sun.png";
+  icon.src = "images/sun.png";
   document.body.classList.add("darkmode");
 }
 
 icon.onclick = function () {
   document.body.classList.toggle("darkmode");
   if (document.body.classList.contains("darkmode")) {
-    icon.src = "sun.png";
+    icon.src = "images/sun.png";
     localStorage.setItem("theme", "dark");
   } else {
-    icon.src = "moon.png";
+    icon.src = "images/moon.png";
     localStorage.setItem("theme", "light");
   }
 };
