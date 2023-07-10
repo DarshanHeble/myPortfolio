@@ -744,12 +744,12 @@ footer {
 }
 
 /* --------------------------------------footer End------------------------------ */
-/* @media (max-width:768px) {
-    .logo {
-        width: 375px;
-    }
-} */
+
 @media (max-width:768px) {
+    .skillsInfo {
+        grid-template-columns: auto auto auto auto auto;
+    }
+
     footer {
         flex-direction: column;
     }
@@ -764,6 +764,18 @@ footer {
         display: flex;
         justify-content: space-evenly;
     }
+
+    .aside .smicons-wrapper a .fa {
+        color: #171717;
+    }
+
+    /* .discord:hover {
+        width: fit-content;
+    }
+    
+    .discord:hover .showID {
+        display: inline;
+    } */
 }
 
 @media (max-width:640px) {
@@ -771,10 +783,6 @@ footer {
         justify-content: space-between;
         padding: 0 20px;
     }
-
-    /* header .logo {
-        width: 206px;
-    } */
 
     .wraper {
         display: none;
@@ -823,6 +831,10 @@ footer {
         justify-content: center;
         align-items: flex-start;
         background-color: rgb(255 153 0 / 90%);
+    }
+
+    .wraper2 .button a {
+        color: #1f1f1f;
     }
 
     .wraper2 .button a .icon {
@@ -884,12 +896,6 @@ footer {
     .wraper2 .button:hover .t5 {
         right: 15px;
     }
-
-    /* .moon {
-        position: absolute;
-        right: 37px;
-        top: 3px;
-    } */
 
     .moon #moon {
         width: 32px;
@@ -1044,8 +1050,6 @@ footer {
     .Contact .contact-info .send-message .name-email {
         flex-direction: column;
     }
-
-    /* element.style {} */
 
     .Contact .contact-info .send-message .name-email #name {
         width: 90vw;
