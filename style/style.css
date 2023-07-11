@@ -59,8 +59,8 @@
 /* --------------------------------------Scrollbar End------------------------------ */
 
 :root {
-    --bg-header: rgb(221 221 221 / 95%);
-    --body-bg-color: #cfcfcf;
+    --bg-header: rgb(221 221 221 / 90%);
+    --body-bg-color: #e7e7e7;
     --logo-color: rgba(53, 53, 53, 0.966);
     --icon-color: rgba(53, 53, 53, 0.966);
     --heading-color: rgb(7, 7, 7);
@@ -70,11 +70,12 @@
     --light-theme-color: rgb(250, 198, 139);
     --border-color: #4e4e4e;
     --moon-color: brightness(0.7);
+    --box-shadow: 3px 2px 9px #393939;
 }
 
 /* --------------------------------------Dark Theme Start------------------------------ */
 .darkmode {
-    --bg-header: rgba(0, 0, 0, 0.95);
+    --bg-header: rgb(31 31 31 / 82%);
     --body-bg-color: #171717;
     --heading-color: rgb(205 205 205);
     --paragraph-color: rgb(200 200 200);
@@ -83,6 +84,7 @@
     --theme-shadow-color: rgb(255, 166, 0);
     --border-color: #575757;
     --moon-color: brightness(1);
+    --box-shadow: 4px 4px 5px 0px rgb(123 121 121);
 }
 
 /* --------------------------------------Dark Theme End------------------------------ */
@@ -531,9 +533,59 @@ header {
     font-size: 22px;
 }
 
+#svghtml {
+    font-size: 7rem;
+    fill: #ff0000;
+}
+
+#svgcss {
+    font-size: 7rem;
+    fill: #005eff;
+}
+
+#svgjs {
+    font-size: 7rem;
+    fill: #ffc800
+}
+
+#svgtwcss {
+    font-size: 7rem;
+    fill: #005eff
+}
+
+#svgfigma {
+    width: 110px;
+    height: 110px;
+}
+
+#svgpython {
+    width: 110px;
+    height: 110px;
+}
+
+#svgjava {
+    width: 110px;
+    height: 110px;
+}
+
 #svggithub {
     fill: var(--icon-color);
     font-size: 7rem;
+}
+
+#svgvscode {
+    width: 110px;
+    height: 110px;
+}
+
+#svglinux {
+    width: 110px;
+    height: 110px;
+}
+
+#svgsql {
+    font-size: 7rem;
+    fill: #5277b7
 }
 
 /* --------------------------------------Skills End------------------------------ */
@@ -585,7 +637,7 @@ header {
     border-radius: 30px;
     padding: 17px 0 0 17px;
     line-height: 30px;
-    box-shadow: 5px 5px 10px #cdcdcd;
+    box-shadow: var(--box-shadow);
 }
 
 .education .educationinfo .edubar .edu h2 {
@@ -693,7 +745,7 @@ header {
 
 .Contact .contact-info .send-message input:focus,
 textarea:focus {
-    box-shadow: 10px 10px 20px #cdcdcd;
+    box-shadow: var(--box-shadow);
     border: 1px solid var(--border-color);
 }
 
@@ -757,11 +809,14 @@ footer {
     .aside {
         position: static;
         height: auto;
-        width: auto;
+        display: flex;
+        justify-content: center;
+        width: -webkit-fill-available;
     }
 
     .aside .smicons-wrapper {
         display: flex;
+        width: 7rem;
         justify-content: space-evenly;
     }
 
@@ -1078,6 +1133,27 @@ footer {
     }
 }
 
+@media (max-width:424px) {
+
+    #svghtml,
+    #svgcss,
+    #svgjs,
+    #svgtwcss,
+    #svggithub,
+    #svgsql {
+        font-size: 5rem;
+    }
+
+    #svgfigma,
+    #svgpython,
+    #svgjava,
+    #svgvscode,
+    #svglinux {
+        width: 95px;
+        height: 85px;
+    }
+}
+
 @media (max-width:375px) {
     .fa-times {
         right: -12rem;
@@ -1109,32 +1185,6 @@ footer {
         100% {
             left: 0;
         }
-    }
-
-    .skills .skills-info .skills-box {
-        width: auto;
-    }
-
-    .skills .skills-info .skills-box .myskills .skills {
-        width: 17rem;
-        height: 49px;
-        margin: 8px 0 0 0px;
-    }
-
-    .skills .skills-info .skills-box .skills-box-head {
-        width: 18rem;
-    }
-
-    .skills .skills-info .skills-box .myskills .skills {
-        width: auto;
-    }
-
-    .skills .skills-info .skills-box .myskills .skills .aboveskillbar {
-        width: 16rem;
-    }
-
-    .skills {
-        height: auto;
     }
 
     .skillsInfo {
