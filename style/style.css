@@ -666,6 +666,34 @@ header {
     right: 1.5rem;
 }
 
+/* ==== */
+.detailEducationInfo {
+    /* position: fixed; */
+    background: #f67676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailEducationInfo1 .info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .detailEducationInfo1 .info .cross {
+    color: var(--icon-color);
+} */
+.detailEducationInfo1 .info .cross p {
+    margin: 0 0 0 0;
+    color: var(--icon-color);
+    text-align: right;
+}
+
+.detailEducationInfo1 .info .details img {
+    width: 50%;
+    height: 50%;
+}
+
 /* --------------------------------------Education End------------------------------ */
 /* --------------------------------------Contact Start------------------------------ */
 .Contact .contact-info {
