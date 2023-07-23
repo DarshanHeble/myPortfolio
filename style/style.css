@@ -372,7 +372,7 @@ header {
     height: 5.5rem;
     margin-top: -21px;
     line-height: 39px;
-    font-size: 2.5rem;
+    font-size: 2.88rem;
 }
 
 .home .home-info .head .wrapper {
@@ -526,7 +526,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* transition: all 1s; */
 }
+
+/* .skill:hover {
+    transform: rotateY(180deg);
+} */
 
 .skill small {
     color: var(--paragraph-color);
@@ -591,7 +596,7 @@ header {
 /* --------------------------------------Skills End------------------------------ */
 /* --------------------------------------Projectss Start------------------------------ */
 .project-info .project a img {
-    width: 1rem;
+    width: 25rem;
 }
 
 /* --------------------------------------Project End------------------------------ */
@@ -680,22 +685,28 @@ header {
     flex-direction: column;
 }
 
-/* .detailEducationInfo1 .info .cross {
-    color: var(--icon-color);
-} */
-.detailEducationInfo1 .info .cross p {
-    margin: 0 0 0 0;
-    color: var(--icon-color);
-    text-align: right;
+.detailEducationInfo1 .info .heading {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.detailEducationInfo1 .info .details img {
-    width: 50%;
-    height: 50%;
+.detailEducationInfo1 .info .heading img {
+    width: 3rem;
+    border-radius: 2rem;
 }
+
+.detailEducationInfo1 .info .photoGallery img {
+    width: 13rem;
+    border-radius: 1rem;
+}
+
 
 /* --------------------------------------Education End------------------------------ */
 /* --------------------------------------Contact Start------------------------------ */
+.Contact {
+    width: auto;
+}
+
 .Contact .contact-info {
     width: 80vw;
     height: 72vh;
@@ -1001,6 +1012,7 @@ footer {
     }
 
     .home .home-info .head {
+        font-size: 2.64rem;
         height: auto;
     }
 
