@@ -26,15 +26,6 @@ icon.onclick = function () {
 };
 // ---------------------------dark mode end----------------------------
 
-// ---------------------------typing start----------------------------
-// var typed = new typed(".typing", {
-//     strings: [" ", "Web Developer", "Programer"],
-//     typeSpeed: 100,
-//     backSpeed: 60,
-//     Loop: true
-// })
-// ---------------------------typing end----------------------------
-
 // ---------------------------Scroll Animation Start----------------------------
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -98,3 +89,16 @@ form.addEventListener('submit', e => {
 })
 
 // ---------------------------form script end----------------------------
+// ---------------------------  CV start ----------------------------
+var cvbtn = document.getElementById("dow-cv");
+var cvtimes = document.querySelector(".cv div i")
+var cv = document.querySelector(".cv");
+cvbtn.addEventListener("click", () => {
+  cv.style.display = "flex";
+});
+cvtimes.addEventListener("click", () => {
+  cv.style.display = "none";
+});
+
+
+// ---------------------------  CV end----------------------------
