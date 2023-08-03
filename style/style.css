@@ -552,7 +552,8 @@ header {
 
 
 
-.cv embed {
+.cv embed,
+object {
     height: 96%;
     width: 80%;
 }
@@ -1133,6 +1134,13 @@ footer {
         height: 16rem;
     }
 
+    .cv .fa {
+        display: inline;
+        color: var(--icon-color);
+        line-height: 15px;
+        font-size: 2.3rem;
+    }
+
     /* ----------------about end-------------- */
     /* ----------------skill start-------------- */
 
@@ -1239,11 +1247,25 @@ footer {
         width: 95px;
         height: 85px;
     }
+
+    .cv .fa {
+        display: inline;
+        color: var(--icon-color);
+        line-height: 15px;
+        font-size: 2.3rem;
+    }
 }
 
 @media (max-width:375px) {
     .fa-times {
         right: -12rem;
+    }
+
+    .cv .fa {
+        display: inline;
+        color: var(--icon-color);
+        line-height: 15px;
+        font-size: 2.3rem;
     }
 }
 
@@ -1272,6 +1294,13 @@ footer {
         100% {
             left: 0;
         }
+    }
+
+    .cv .fa {
+        display: inline;
+        color: var(--icon-color);
+        line-height: 15px;
+        font-size: 2.3rem;
     }
 
     .skillsInfo {
