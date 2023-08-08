@@ -93,13 +93,13 @@
 
 /* --------------------------------------btn Start------------------------------ */
 .btn {
-    width: 7rem;
+    width: 8rem;
     height: 3rem;
     display: block;
     font-size: 16px;
     color: #f8f8f8;
     margin: 19px 0 0 0;
-    border-radius: 13px;
+    border-radius: 17px;
     transition: 0.2s;
     background-color: var(--theme-color);
     text-align: center;
@@ -111,7 +111,7 @@
 
 .btn:hover {
     padding-top: 16px;
-    width: 7.1rem;
+    width: 8.1rem;
     height: 3.1rem;
     font-size: 17px;
     background-color: var(--theme-color);
@@ -270,6 +270,7 @@ header {
 
 /* --------------------------------------Header End------------------------------ */
 /* --------------------------------------Aside Start------------------------------ */
+
 .aside {
     width: 4rem;
     height: 9rem;
@@ -348,7 +349,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 80vw;
-    height: 100vh;
+    /* height: 50rem; */
     padding-top: 67px;
 }
 
@@ -454,7 +455,7 @@ header {
 
 /* --------------------------------------Home End------------------------------ */
 .head {
-    /* text-align: center; */
+    font-size: 1.2rem;
     color: var(--theme-color);
 }
 
@@ -505,11 +506,11 @@ header {
 }
 
 .about .about-info .about-para .about-btn {
-    width: 8rem;
+    width: 8.5rem;
 }
 
 .about .about-info .about-para .about-btn:hover {
-    width: 8.1rem;
+    width: 8.6rem;
     /* height: ; */
 }
 
@@ -651,6 +652,7 @@ object {
 /* --------------------------------------Education Start------------------------------ */
 .education {
     justify-content: space-evenly;
+    height: 50rem;
 }
 
 .education .educationinfo {
