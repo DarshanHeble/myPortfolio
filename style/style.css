@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: .4s ease-in-out;
 }
 
 /* --------------------------------------Scrollbar Start------------------------------ */
@@ -368,7 +369,7 @@ header {
         padding-left: 2.5rem;
     }
 
-    .home-info .head {
+    .home-info .home-head {
         color: var(--heading-color);
         width: 28rem;
         height: 5.5rem;
@@ -377,15 +378,15 @@ header {
         font-size: 2.88rem;
     }
 
-    .home-info .head .wrapper {
+    .home-info .home-head .wrapper {
         display: flex;
     }
 
-    .home-info .head .wrapper .static-txt {
+    .home-info .home-head .wrapper .static-txt {
         margin-top: 10px;
     }
 
-    .home-info .head .wrapper .dynamic-txt {
+    .home-info .home-head .wrapper .dynamic-txt {
         color: var(--theme-color);
         margin-left: 15px;
         height: 60px;
@@ -393,7 +394,7 @@ header {
         overflow: hidden;
     }
 
-    .home-info .head .wrapper .dynamic-txt li {
+    .home-info .home-head .wrapper .dynamic-txt li {
         position: relative;
         list-style-type: none;
         position: relative;
@@ -401,7 +402,7 @@ header {
         animation: slide 12s steps(4) infinite;
     }
 
-    .home-info .head .wrapper .dynamic-txt li span::after {
+    .home-info .home-head .wrapper .dynamic-txt li span::after {
         content: '';
         position: absolute;
         left: 0;
@@ -454,8 +455,13 @@ header {
 
 /* --------------------------------------Home End------------------------------ */
 .head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 1.2rem;
     color: var(--theme-color);
+
+    .underline {}
 }
 
 /* --------------------------------------About Start------------------------------ */
