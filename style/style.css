@@ -897,9 +897,14 @@ textarea:focus {
     border: 1px solid var(--border-color);
 }
 
+.submit-reset-buttons {
+    display: flex;
+}
+
 .formbtn {
     border: none;
     padding-bottom: 14px;
+    margin-right: 1rem;
 }
 
 /* --------------------------------------Contact End------------------------------ */
@@ -1159,6 +1164,18 @@ footer {
         height: auto;
     }
 
+    @keyframes typing {
+
+        40%,
+        60% {
+            left: calc(55% + 30px);
+            /* left: calc(100% + 30px); */
+        }
+
+        100% {
+            left: 0;
+        }
+    }
 
 
     .home .home-info p {
@@ -1195,7 +1212,7 @@ footer {
 
     /* ----------------about start-------------- */
     .about {
-        margin: 11rem;
+        margin: 11rem 0 0 0;
     }
 
     .about .about-info {
@@ -1283,6 +1300,7 @@ footer {
     /* ----------------contact start-------------- */
     .Contact {
         justify-content: space-evenly;
+        margin-top: 0;
     }
 
     .Contact .contact-info {
@@ -1407,6 +1425,10 @@ footer {
         color: var(--icon-color);
         line-height: 15px;
         font-size: 2.3rem;
+    }
+
+    .about {
+        margin: 11rem;
     }
 
     .skillsInfo {
