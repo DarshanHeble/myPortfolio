@@ -142,7 +142,7 @@ header {
     top: 0;
     right: 0;
     background-color: var(--bg-header);
-    z-index: 1;
+    z-index: 100;
 
 
     .fa-bars {
@@ -372,7 +372,7 @@ header {
     .home-info .home-head {
         color: var(--heading-color);
         width: 28rem;
-        height: 5.5rem;
+        /* height: 5.5rem; */
         margin-top: -21px;
         line-height: 39px;
         font-size: 2.88rem;
@@ -458,10 +458,29 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-size: 1.2rem;
     color: var(--theme-color);
 
-    .underline {}
+    .underline {
+        background-color: var(--theme-color);
+        height: 7px;
+        border-radius: 1rem;
+        margin-top: 3px;
+        width: 1rem;
+    }
+
+    &:hover .underline {
+        width: 7rem;
+    }
+
+    &:hover .skill-underline {
+        width: 9rem;
+    }
+
+    &:hover .contact-underline {
+        width: 8rem;
+    }
 }
 
 /* --------------------------------------About Start------------------------------ */
@@ -572,6 +591,14 @@ header {
     grid-template-rows: auto auto;
     gap: 2em;
     margin-top: 5rem;
+
+    &:nth-child(1) {
+        transition: all 1s;
+    }
+
+    &:nth-child(2) {
+        transition: all 2s;
+    }
 }
 
 .skill {
@@ -667,12 +694,14 @@ header {
     align-items: center;
     width: auto;
     height: 77vh;
+    /* overflow: hidden; */
 }
 
 .education .educationinfo .edubar {
     /* border: 1px solid black; */
     width: 40rem;
     height: 27rem;
+    /* overflow: hidden; */
 }
 
 .education .educationinfo .edubar1,
@@ -688,15 +717,41 @@ header {
 
 .education .educationinfo .edubar .edu {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     border: 1px solid rgb(128, 127, 127);
     height: 10rem;
     width: 18rem;
     border-radius: 30px;
-    padding: 17px 0 0 17px;
+    padding: 17px 0 0 22px;
     line-height: 30px;
     box-shadow: var(--box-shadow);
+    z-index: 20;
+    overflow: hidden;
+
+    .h2 {
+        &::before {
+            content: '.';
+            color: transparent;
+            position: absolute;
+            /* background-color: var(--theme-color); */
+            border-bottom: 4rem solid var(--theme-color);
+            border-top: 4rem solid var(--theme-color);
+            width: 22rem;
+            height: 47%;
+            top: -9rem;
+            left: -13rem;
+            transform: rotateZ(307deg);
+            transition: all 1s;
+            z-index: -1;
+        }
+    }
+
+    &:hover .h2::before {
+        top: 5rem;
+        left: 9rem;
+    }
 }
 
 .education .educationinfo .edubar .edu h2 {
@@ -926,6 +981,28 @@ footer {
     } */
 }
 
+/* @media (max-width:768px) {
+    .home {
+        padding-top: 6rem;
+
+        .home-info {
+            width: auto;
+            height: auto;
+            padding-left: 0;
+        }
+
+        & .home-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            margin: 0;
+            overflow: hidden;
+            background-color: var(--theme-color);
+        }
+    }
+} */
+
 @media (max-width:640px) {
     header {
         justify-content: space-between;
@@ -1058,6 +1135,18 @@ footer {
         width: 100vw;
         height: 40rem;
         padding-top: 0;
+
+        .home-info .home-head {
+            font-size: 2.5rem;
+        }
+
+        .home-info .home-head .wrapper {
+            flex-direction: column;
+        }
+
+        .home-info .home-head .wrapper .dynamic-txt {
+            margin: 0;
+        }
     }
 
     .home .home-info {
@@ -1070,6 +1159,8 @@ footer {
         height: auto;
     }
 
+
+
     .home .home-info p {
         line-height: 17px;
         color: var(--paragraph-color);
@@ -1078,9 +1169,9 @@ footer {
     }
 
     .home .home-img {
-        width: 16rem;
-        height: 16rem;
-        margin: 0 0 0 4rem;
+        width: 100%;
+        overflow: hidden;
+        margin: 0 0 0 2rem;
     }
 
     .home .home-img img {
@@ -1099,11 +1190,12 @@ footer {
         height: 120svh;
         /* border: 1px solid red; */
         padding-top: 0;
+        margin-top: 4rem;
     }
 
     /* ----------------about start-------------- */
     .about {
-        margin: 130px;
+        margin: 11rem;
     }
 
     .about .about-info {
@@ -1276,10 +1368,18 @@ footer {
 }
 
 @media (max-width:320px) {
+    .home .home-img {
+        height: 15rem;
+        margin: 0 0 0 2rem;
+    }
 
     .home .home-img img {
-        width: 26rem;
+        width: 23rem;
     }
+
+    /* .home-info .home-head {
+        height: 0;
+    } */
 
     .home .home-info .head .wrapper {
         flex-direction: column;
