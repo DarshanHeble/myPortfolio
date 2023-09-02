@@ -907,6 +907,12 @@ textarea:focus {
     margin-right: 1rem;
 }
 
+#sub {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /* --------------------------------------Contact End------------------------------ */
 /* --------------------------------------footer start------------------------------ */
 footer {
@@ -1012,124 +1018,125 @@ footer {
     header {
         justify-content: space-between;
         padding: 0 20px;
+
+        .wraper {
+            display: none;
+        }
+
+        .fa-bars {
+            color: var(--icon-color);
+            position: relative;
+            /* right: 2rem; */
+            display: inline;
+            font-size: 2rem;
+        }
+
+        .fa-times {
+            color: rgba(53, 53, 53, 0.966);
+            display: inline;
+            font-size: 2.9rem;
+            position: relative;
+            bottom: 3rem;
+            left: calc(100vw - 70%);
+        }
+
+        .wraper {
+            display: flex;
+            flex-direction: row;
+            left: 40rem;
+            height: 100vh;
+            width: 100vw;
+            top: 0;
+            position: fixed;
+            z-index: 1;
+            transition: all 0.3s;
+        }
+
+        .wraper1 {
+            display: inline;
+            width: 30vw;
+            height: 100vh;
+            background-color: #ffffff00;
+        }
+
+        .wraper2 {
+            width: 70vw;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background-color: rgb(255 153 0 / 90%);
+        }
+
+        .wraper2 .button a {
+            color: #1f1f1f;
+        }
+
+        .wraper2 .button a .icon {
+            color: rgba(53, 53, 53, 0.966);
+            font-size: 2.7rem;
+        }
+
+        .wraper2 .button .icon span {
+            font-size: 3rem;
+        }
+
+        .wraper2 .button {
+            width: 8rem;
+            height: 4rem;
+        }
+
+        .wraper2 .button:hover {
+            width: 15rem;
+        }
+
+        .wraper2 .button:hover {
+            width: 15rem;
+        }
+
+        .wraper2 .button .tooltip {
+            top: 35px;
+            left: 8rem;
+        }
+
+        .wraper2 .button:hover .tooltip {
+            display: inline;
+            font-size: 2rem;
+        }
+
+        .wraper2 .button:hover .icon {
+            margin-right: 7rem;
+        }
+
+        .wraper2 .b4:hover {
+            width: 18rem;
+        }
+
+        .wraper2 .button:hover .icon4 {
+            margin-right: 10rem;
+        }
+
+        .wraper2 .button:hover .t4 {
+            left: 8rem;
+        }
+
+        .wraper2 .b5:hover {
+            width: 17rem;
+        }
+
+        .wraper2 .button:hover .icon5 {
+            margin-right: 9rem;
+        }
+
+        .wraper2 .button:hover .t5 {
+            right: 15px;
+        }
+
+        .moon #moon {
+            width: 32px;
+        }
     }
 
-    .wraper {
-        display: none;
-    }
-
-    .fa-bars {
-        color: var(--icon-color);
-        position: relative;
-        /* right: 2rem; */
-        display: inline;
-        font-size: 2rem;
-    }
-
-    .fa-times {
-        color: rgba(53, 53, 53, 0.966);
-        display: inline;
-        font-size: 2.9rem;
-        position: relative;
-        bottom: 3rem;
-        left: calc(100vw - 70%);
-    }
-
-    .wraper {
-        display: flex;
-        flex-direction: row;
-        left: 40rem;
-        height: 100vh;
-        width: 100vw;
-        top: 0;
-        position: fixed;
-        z-index: 1;
-        transition: all 0.3s;
-    }
-
-    .wraper1 {
-        display: inline;
-        width: 30vw;
-        height: 100vh;
-        background-color: #ffffff00;
-    }
-
-    .wraper2 {
-        width: 70vw;
-        height: 100vh;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        background-color: rgb(255 153 0 / 90%);
-    }
-
-    .wraper2 .button a {
-        color: #1f1f1f;
-    }
-
-    .wraper2 .button a .icon {
-        color: rgba(53, 53, 53, 0.966);
-        font-size: 2.7rem;
-    }
-
-    .wraper2 .button .icon span {
-        font-size: 3rem;
-    }
-
-    .wraper2 .button {
-        width: 8rem;
-        height: 4rem;
-    }
-
-    .wraper2 .button:hover {
-        width: 15rem;
-    }
-
-    .wraper2 .button:hover {
-        width: 15rem;
-    }
-
-    .wraper2 .button .tooltip {
-        top: 35px;
-        left: 8rem;
-    }
-
-    .wraper2 .button:hover .tooltip {
-        display: inline;
-        font-size: 2rem;
-    }
-
-    .wraper2 .button:hover .icon {
-        margin-right: 7rem;
-    }
-
-    .wraper2 .b4:hover {
-        width: 18rem;
-    }
-
-    .wraper2 .button:hover .icon4 {
-        margin-right: 10rem;
-    }
-
-    .wraper2 .button:hover .t4 {
-        left: 8rem;
-    }
-
-    .wraper2 .b5:hover {
-        width: 17rem;
-    }
-
-    .wraper2 .button:hover .icon5 {
-        margin-right: 9rem;
-    }
-
-    .wraper2 .button:hover .t5 {
-        right: 15px;
-    }
-
-    .moon #moon {
-        width: 32px;
-    }
 
     /* ----------------home-------------- */
 
