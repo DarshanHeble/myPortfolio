@@ -60,8 +60,8 @@
 /* --------------------------------------Scrollbar End------------------------------ */
 
 :root {
-    --bg-header: rgb(221 221 221 / 90%);
-    --body-bg-color: #e7e7e7;
+    --bg-header: rgb(255 255 255 / 90%);
+    --body-bg-color: #fefefe;
     --logo-color: rgba(53, 53, 53, 0.966);
     --icon-color: rgba(53, 53, 53, 0.966);
     --heading-color: rgb(7, 7, 7);
