@@ -77,21 +77,26 @@ wraper1.addEventListener("click", function () {
 
 // ---------------------------menue bar end----------------------------
 // ---------------------------form script start----------------------------
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyxKT3Z3siXDd_G89lY5Keq98n8Gh5sOdRGkqcsBNYpK8OMeqKKth_Uevg_ZKRHvDIMrg/exec'
-const form = document.forms['form']
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyxKT3Z3siXDd_G89lY5Keq98n8Gh5sOdRGkqcsBNYpK8OMeqKKth_Uevg_ZKRHvDIMrg/exec";
+const form = document.forms["form"];
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then(response => alert("Thank you! your form is submitted successfully."))
-    .then(() => { window.location.reload(); })
-    .catch(error => console.error('Error!', error.message))
-})
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) =>
+      alert("Thank you! your form is submitted successfully.")
+    )
+    .then(() => {
+      window.location.reload();
+    })
+    .catch((error) => console.error("Error!", error.message));
+});
 
 // ---------------------------form script end----------------------------
 // ---------------------------  CV start ----------------------------
 var cvbtn = document.getElementById("dow-cv");
-var cvtimes = document.querySelector(".cv div i")
+var cvtimes = document.querySelector(".cv div i");
 var cv = document.querySelector(".cv");
 cvbtn.addEventListener("click", () => {
   cv.style.display = "flex";
@@ -99,6 +104,5 @@ cvbtn.addEventListener("click", () => {
 cvtimes.addEventListener("click", () => {
   cv.style.display = "none";
 });
-
 
 // ---------------------------  CV end----------------------------

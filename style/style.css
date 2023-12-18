@@ -80,7 +80,7 @@
     --bg-header: rgb(31 31 31 / 82%);
     --body-bg-color: #171717;
     --heading-color: rgb(205 205 205);
-    --paragraph-color: rgb(200 200 200);
+    --paragraph-color: rgb(177 177 177);
     --icon-color: rgb(209 209 209);
     --logo-color: rgb(235 235 235);
     --theme-shadow-color: rgb(255, 166, 0);
@@ -838,11 +838,11 @@ header {
 
 .Contact .contact-info .othercontact .box .fa {
     color: var(--theme-color);
-    font-size: 35px;
+    font-size:40px;
 }
 
 .Contact .contact-info .othercontact .box h3 {
-    font-size: 25px;
+    font-size: 30px;
     color: var(--heading-color);
 }
 
