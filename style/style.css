@@ -143,6 +143,8 @@ header {
   right: 0;
   background-color: var(--bg-header);
   z-index: 100;
+  /* background-color: rgb(31 31 31 / 62%); */
+  backdrop-filter: blur(1rem);
 
   .fa-bars {
     display: none;
@@ -668,6 +670,9 @@ header {
 #reactjs {
   font-size: 7rem;
   fill: rgb(0, 179, 255);
+}
+#angular {
+  font-size: 8rem;
 }
 #git {
   font-size: 7rem;
