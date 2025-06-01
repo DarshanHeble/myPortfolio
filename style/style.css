@@ -60,7 +60,7 @@
 /* --------------------------------------Scrollbar End------------------------------ */
 
 :root {
-  --bg-header: rgb(255 255 255 / 90%);
+  --bg-header: rgb(255 255 255 / 60%);
   --body-bg-color: #fefefe;
   --logo-color: rgba(53, 53, 53, 0.966);
   --icon-color: rgba(53, 53, 53, 0.966);
@@ -78,7 +78,7 @@
 
 /* --------------------------------------Dark Theme Start------------------------------ */
 .darkmode {
-  --bg-header: rgb(31 31 31 / 82%);
+  --bg-header: rgb(31 31 31 / 60%);
   --body-bg-color: #171717;
   --heading-color: rgb(205 205 205);
   --paragraph-color: rgb(177 177 177);
@@ -103,7 +103,7 @@
   color: #f8f8f8;
   margin: 19px 0 0 0;
   border-radius: 17px;
-  transition: 0.2s;
+  transition: 0.4s;
   background-color: var(--theme-color);
   text-align: center;
   padding-top: 14px;
@@ -132,59 +132,6 @@ body {
   overflow-x: hidden;
 }
 
-.ameba {
-  position: absolute;
-  /* filter: blur(7rem); */
-  width: 21rem;
-  height: 21rem;
-  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-  border-radius: 50%;
-  animation: amebaMovement 10s ease-in-out infinite,
-    colorChange 5s ease-in-out infinite;
-}
-
-@keyframes amebaMovement {
-  0% {
-    transform: scale(1) translate(0, 0);
-  }
-  25% {
-    transform: scale(1.3) translate(20px, -30px);
-  }
-  50% {
-    transform: scale(1) translate(40px, 20px);
-  }
-  75% {
-    transform: scale(0.7) translate(-20px, 30px);
-  }
-  100% {
-    transform: scale(1) translate(0, 0);
-  }
-}
-
-@keyframes colorChange {
-  0% {
-    background: linear-gradient(
-      45deg,
-      var(--theme-color),
-      var(--light-theme-color)
-    );
-  }
-  50% {
-    background: linear-gradient(
-      45deg,
-      var(--light-theme-color),
-      var(--theme-color)
-    );
-  }
-  100% {
-    background: linear-gradient(
-      45deg,
-      var(--theme-color),
-      var(--light-theme-color)
-    );
-  }
-}
-
 .blob {
   -webkit-filter: blur(10rem);
   filter: var(--blob-blur);
@@ -198,7 +145,7 @@ body {
   transform: translate(-50%, -50%);
   animation: blobMovement 10s ease-in-out infinite,
     blobColorChange 5s linear infinite;
-  z-index: -1; /* Ensure the blob stays behind the text */
+  z-index: -1; /* Ensures the blob stays behind the text */
 }
 
 @keyframes blobMovement {
@@ -480,6 +427,12 @@ header {
       background-clip: text;
       background-size: 200% 200%;
       animation: gradient-animation 5s ease infinite;
+    }
+
+    p {
+      padding-top: 0;
+      color: var(--paragraph-color);
+      text-align: center;
     }
 
     .home-info2 {
