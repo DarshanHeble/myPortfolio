@@ -125,11 +125,14 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 body {
   background-color: var(--body-bg-color);
   overflow-x: hidden;
+  width: 100vw;
+  position: relative;
 }
 
 .blob {
@@ -177,7 +180,7 @@ body {
 
 /* --------------------------------------Header Start------------------------------ */
 header {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   padding: 0 6.5vw;
@@ -402,6 +405,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 80vw;
   height: 100vh;
   padding-top: 6rem;
@@ -1101,7 +1105,7 @@ footer {
 .to-top {
   background: var(--body-bg-color);
   box-shadow: 0px 0px 7px 0px var(--border-color);
-  position: fixed;
+  position: absolute;
   bottom: 16px;
   right: 32px;
   width: 50px;
